@@ -10,7 +10,7 @@ const Content = () => (
       title="Minimal Features"
       description="Don't spend time ripping out unneeded plugins and bloat."
     />
-    <content
+    <slot
       style={{
         display: "grid",
         alignItems: "center",
@@ -28,7 +28,7 @@ const Content = () => (
       <div>
         <img src={feature} alt="a blank card floating over colorful graphics" />
       </div>
-    </content>
+    </slot>
   </div>
 )
 

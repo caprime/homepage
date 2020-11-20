@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 
 import { COLORS } from "../styles/constants"
 
-const Footer = ({ siteTitle }) => (
+interface IProps {
+  siteTitle: string
+}
+
+const Footer: React.FC<IProps> = ({ siteTitle }) => (
   <footer
     style={{
       padding: "1rem",
@@ -36,13 +40,5 @@ const Footer = ({ siteTitle }) => (
     </div>
   </footer>
 )
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Footer

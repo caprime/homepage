@@ -3,7 +3,9 @@ import React from "react"
 import { COLORS, BORDER_RADIUS, GRADIENT } from "../styles/constants"
 import "../styles/button.css"
 
-const Button = ({ children }) => (
+interface IProps {}
+
+const Button: React.FC<IProps> = ({ children }) => (
   <button
     style={{
       padding: ".5rem 2.5rem",

@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter Landing Page`,
-    description: `A barebone landing page starter with some minimal styles.`,
-    author: `@gillkyle`,
-    siteUrl: `https://gatsby-starter-landing-page.netlify.com`,
+    title: `Caprime`,
+    description: `Caprime homepage`,
+    author: `@lvndry`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,6 +20,19 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Caprime`,
+        short_name: `Caprime`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        favicon: `${__dirname}/src/images/logo_only.png`,
+        icon: `${__dirname}/src/images/logo_only.png`,
       },
     },
   ],

@@ -1,12 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Button from "../components/button"
+import Button from "./button"
 import headerImage from "../images/header.png"
 import MockupContent from "./image"
 import mockupFrame from "../images/mockup-frame.png"
 
-const Header = ({ siteTitle }) => (
+interface IProps {}
+
+const Header: React.FC<IProps> = () => (
   <div
     style={{
       display: "flex",
@@ -51,13 +53,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </div>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
